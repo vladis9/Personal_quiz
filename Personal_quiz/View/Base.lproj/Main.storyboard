@@ -221,12 +221,6 @@
                             <constraint firstItem="SEW-Uq-oGo" firstAttribute="centerY" secondItem="86S-Hf-iDX" secondAttribute="centerY" constant="32" id="smG-mC-Sr7"/>
                             <constraint firstItem="wez-x6-dX2" firstAttribute="centerY" secondItem="86S-Hf-iDX" secondAttribute="centerY" constant="32" id="y8f-G8-6i2"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="SEW-Uq-oGo"/>
-                                <exclude reference="wez-x6-dX2"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="8IV-UQ-0eq">
                         <barButtonItem key="rightBarButtonItem" title="3 =&gt;" id="Am9-Ua-84y">

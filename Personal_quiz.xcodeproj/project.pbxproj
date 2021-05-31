@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F585D0D0265D18870080BC0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F585D0CF265D18870080BC0D /* AppDelegate.swift */; };
 		F585D0D2265D18870080BC0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F585D0D1265D18870080BC0D /* SceneDelegate.swift */; };
-		F585D0D4265D18870080BC0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F585D0D3265D18870080BC0D /* ViewController.swift */; };
+		F585D0D4265D18870080BC0D /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F585D0D3265D18870080BC0D /* IntroductionViewController.swift */; };
 		F585D0D7265D18870080BC0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F585D0D5265D18870080BC0D /* Main.storyboard */; };
 		F585D0D9265D188C0080BC0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F585D0D8265D188C0080BC0D /* Assets.xcassets */; };
 		F585D0DC265D188D0080BC0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F585D0DA265D188C0080BC0D /* LaunchScreen.storyboard */; };
@@ -17,13 +17,15 @@
 		F585D0F8265E6CA90080BC0D /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F585D0F7265E6CA90080BC0D /* ResponseType.swift */; };
 		F585D0FB265E6DAD0080BC0D /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F585D0FA265E6DAD0080BC0D /* Answer.swift */; };
 		F585D0FE265E74640080BC0D /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F585D0FD265E74640080BC0D /* AnimalType.swift */; };
+		F588E99F26654CDF00F6E7EA /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F588E99E26654CDF00F6E7EA /* QuestionViewController.swift */; };
+		F588E9A226654D7500F6E7EA /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F588E9A126654D7500F6E7EA /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F585D0CC265D18870080BC0D /* Personal_quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Personal_quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F585D0CF265D18870080BC0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F585D0D1265D18870080BC0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F585D0D3265D18870080BC0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F585D0D3265D18870080BC0D /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
 		F585D0D6265D18870080BC0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F585D0D8265D188C0080BC0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F585D0DB265D188D0080BC0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +34,8 @@
 		F585D0F7265E6CA90080BC0D /* ResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
 		F585D0FA265E6DAD0080BC0D /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		F585D0FD265E74640080BC0D /* AnimalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalType.swift; sourceTree = "<group>"; };
+		F588E99E26654CDF00F6E7EA /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		F588E9A126654D7500F6E7EA /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +68,12 @@
 		F585D0CE265D18870080BC0D /* Personal_quiz */ = {
 			isa = PBXGroup;
 			children = (
-				F585D0DD265D188D0080BC0D /* Info.plist */,
-				F585D0EC265E646E0080BC0D /* View */,
-				F585D0ED265E64AF0080BC0D /* Supporting Files */,
-				F585D0E8265E641B0080BC0D /* Controller */,
 				F585D0EA265E64240080BC0D /* Model */,
+				F585D0EC265E646E0080BC0D /* View */,
+				F585D0E8265E641B0080BC0D /* Controller */,
+				F585D0ED265E64AF0080BC0D /* Supporting Files */,
 				F585D0EF265E66160080BC0D /* Resources */,
+				F585D0DD265D188D0080BC0D /* Info.plist */,
 			);
 			path = Personal_quiz;
 			sourceTree = "<group>";
@@ -77,7 +81,9 @@
 		F585D0E8265E641B0080BC0D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F585D0D3265D18870080BC0D /* ViewController.swift */,
+				F585D0D3265D18870080BC0D /* IntroductionViewController.swift */,
+				F588E99E26654CDF00F6E7EA /* QuestionViewController.swift */,
+				F588E9A126654D7500F6E7EA /* ResultsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -189,12 +195,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F585D0D4265D18870080BC0D /* ViewController.swift in Sources */,
+				F585D0D4265D18870080BC0D /* IntroductionViewController.swift in Sources */,
 				F585D0E6265E63DD0080BC0D /* Question.swift in Sources */,
 				F585D0D0265D18870080BC0D /* AppDelegate.swift in Sources */,
 				F585D0FB265E6DAD0080BC0D /* Answer.swift in Sources */,
 				F585D0D2265D18870080BC0D /* SceneDelegate.swift in Sources */,
+				F588E9A226654D7500F6E7EA /* ResultsViewController.swift in Sources */,
 				F585D0F8265E6CA90080BC0D /* ResponseType.swift in Sources */,
+				F588E99F26654CDF00F6E7EA /* QuestionViewController.swift in Sources */,
 				F585D0FE265E74640080BC0D /* AnimalType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

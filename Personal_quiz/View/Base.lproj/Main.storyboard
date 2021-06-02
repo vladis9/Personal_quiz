@@ -96,18 +96,30 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcC-RD-2y2">
                                         <rect key="frame" x="144.5" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="wsQ-Ci-eMR" eventType="touchUpInside" id="TPd-YZ-qAh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mar-u1-oto">
                                         <rect key="frame" x="144.5" y="46" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="wsQ-Ci-eMR" eventType="touchUpInside" id="u0f-0x-H77"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRQ-jX-Tm4">
                                         <rect key="frame" x="144.5" y="92" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="wsQ-Ci-eMR" eventType="touchUpInside" id="QyY-2H-gbW"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IoN-Bk-b8l">
                                         <rect key="frame" x="144.5" y="138" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="wsQ-Ci-eMR" eventType="touchUpInside" id="KKm-8V-04H"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -174,6 +186,9 @@
                                         <rect key="frame" x="0.0" y="156" width="335" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Ответить"/>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonPressed" destination="wsQ-Ci-eMR" eventType="touchUpInside" id="Y4Q-XT-4gL"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -204,10 +219,13 @@
                                         <rect key="frame" x="0.0" y="116" width="335" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Ответить"/>
+                                        <connections>
+                                            <action selector="rangedAnswerButtonPressed" destination="wsQ-Ci-eMR" eventType="touchUpInside" id="91o-KZ-CvU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nF-HD-GxA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5nF-HD-GxA">
                                 <rect key="frame" x="20" y="116" width="335" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -238,13 +256,7 @@
                             <constraint firstItem="wez-x6-dX2" firstAttribute="centerY" secondItem="86S-Hf-iDX" secondAttribute="centerY" constant="32" id="y8f-G8-6i2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Вопрос №" id="8IV-UQ-0eq">
-                        <barButtonItem key="rightBarButtonItem" title="3 =&gt;" id="Am9-Ua-84y">
-                            <connections>
-                                <segue destination="72Y-cN-9hO" kind="show" id="kdO-SX-vnE"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Вопрос №" id="8IV-UQ-0eq"/>
                     <connections>
                         <outlet property="multipleStackView" destination="ixL-bq-K1v" id="JtU-S9-vx2"/>
                         <outlet property="questionLabel" destination="5nF-HD-GxA" id="vFX-u5-ROb"/>
@@ -310,10 +322,14 @@
                     <navigationItem key="navigationItem" title="Результаты" id="NNW-zE-I0f">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="6x5-2y-Nsu">
                             <connections>
-                                <segue destination="wsc-fc-NAF" kind="unwind" unwindAction="unwindSegue:" id="evh-Eo-mJJ"/>
+                                <segue destination="wsc-fc-NAF" kind="unwind" unwindAction="unwindSegue:" id="PCP-bY-3TH"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultDefinitionLabel" destination="ZLn-sO-w3T" id="e6v-Y4-cOI"/>
+                        <outlet property="resultsAnswerLabel" destination="0VI-f7-9b0" id="1Dq-oE-yJo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qkw-HC-xjw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="wsc-fc-NAF" userLabel="Exit" sceneMemberID="exit"/>
@@ -340,9 +356,6 @@
             <point key="canvasLocation" x="1054" y="79"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="DRH-q5-FlS"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
